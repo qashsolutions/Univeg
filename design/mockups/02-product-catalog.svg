@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="390" height="844" fill="#F5F0E6"/>
+
+  <!-- Status Bar -->
+  <rect width="390" height="44" fill="#5D4E37"/>
+  <text x="20" y="28" fill="#F5F0E6" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">9:41</text>
+  <text x="340" y="28" fill="#F5F0E6" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">85%</text>
+
+  <!-- Header -->
+  <rect y="44" width="390" height="64" fill="#FFFFFF"/>
+  <rect y="107" width="390" height="1" fill="#E8E0D0"/>
+
+  <!-- Back Button -->
+  <polygon points="28,76 20,76 24,72 20,76 24,80" fill="#5D4E37"/>
+  <text x="40" y="80" fill="#5D4E37" font-family="Inter, sans-serif" font-size="14">Back</text>
+
+  <text x="195" y="80" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="18" font-weight="600" text-anchor="middle">Seed Catalog</text>
+
+  <!-- Cart Icon -->
+  <rect x="340" y="64" width="28" height="24" rx="4" fill="none" stroke="#5D4E37" stroke-width="1.5"/>
+  <text x="354" y="82" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">2</text>
+
+  <!-- Search Bar -->
+  <rect x="16" y="120" width="358" height="44" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="120" width="358" height="44" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+  <text x="48" y="147" fill="#5D4E37" fill-opacity="0.5" font-family="Inter, sans-serif" font-size="14">Search seeds...</text>
+  <circle cx="32" cy="142" r="8" fill="none" stroke="#5D4E37" stroke-opacity="0.5" stroke-width="1.5"/>
+
+  <!-- Category Tabs -->
+  <rect x="16" y="176" width="70" height="32" rx="16" fill="#C45D3E"/>
+  <text x="51" y="197" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">All</text>
+
+  <rect x="94" y="176" width="80" height="32" rx="16" fill="#E8E0D0"/>
+  <text x="134" y="197" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Vegetable</text>
+
+  <rect x="182" y="176" width="70" height="32" rx="16" fill="#E8E0D0"/>
+  <text x="217" y="197" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Cotton</text>
+
+  <rect x="260" y="176" width="70" height="32" rx="16" fill="#E8E0D0"/>
+  <text x="295" y="197" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Maize</text>
+
+  <!-- Section Header -->
+  <text x="20" y="240" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">Featured Seeds</text>
+  <text x="340" y="240" fill="#C45D3E" font-family="Inter, sans-serif" font-size="12">View All</text>
+
+  <!-- Product Card 1: Tomato -->
+  <rect x="16" y="256" width="172" height="240" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="256" width="172" height="240" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <!-- Product Image Placeholder -->
+  <rect x="24" y="264" width="156" height="120" rx="4" fill="#C45D3E" fill-opacity="0.08"/>
+  <circle cx="102" cy="324" r="32" fill="#C45D3E" fill-opacity="0.15"/>
+  <ellipse cx="102" cy="324" rx="16" ry="20" fill="#C45D3E" fill-opacity="0.25"/>
+  <!-- Seed packet outline -->
+  <rect x="78" y="300" width="48" height="64" rx="4" fill="#FFFFFF" stroke="#C45D3E" stroke-width="1"/>
+  <text x="102" y="320" fill="#C45D3E" font-family="Playfair Display, Georgia, serif" font-size="8" font-weight="600" text-anchor="middle">TOMATO</text>
+  <text x="102" y="332" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="6" text-anchor="middle">HYBRID 512</text>
+  <rect x="86" y="340" width="32" height="16" rx="2" fill="#C45D3E" fill-opacity="0.2"/>
+
+  <!-- Video indicator -->
+  <rect x="136" y="272" width="36" height="20" rx="4" fill="#5D4E37"/>
+  <polygon points="148,280 148,286 154,283" fill="#FFFFFF"/>
+  <text x="160" y="286" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="8">12</text>
+
+  <text x="32" y="404" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">Tomato Hybrid 512</text>
+  <text x="32" y="422" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11">High yield, disease resistant</text>
+
+  <!-- Rating -->
+  <text x="32" y="442" fill="#D4A84B" font-family="Inter, sans-serif" font-size="11">4.8</text>
+  <text x="52" y="442" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11">(1,240 reviews)</text>
+
+  <!-- Price and Add -->
+  <text x="32" y="466" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="16" font-weight="600">Rs 450</text>
+  <text x="88" y="466" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" fill-opacity="0.6">/10g pack</text>
+
+  <rect x="134" y="450" width="44" height="32" rx="6" fill="#6B7B3C"/>
+  <text x="156" y="471" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Add</text>
+
+  <!-- Product Card 2: Chilli -->
+  <rect x="202" y="256" width="172" height="240" rx="8" fill="#FFFFFF"/>
+  <rect x="202" y="256" width="172" height="240" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <!-- Product Image Placeholder -->
+  <rect x="210" y="264" width="156" height="120" rx="4" fill="#6B7B3C" fill-opacity="0.08"/>
+  <circle cx="288" cy="324" r="32" fill="#6B7B3C" fill-opacity="0.15"/>
+  <!-- Seed packet outline -->
+  <rect x="264" y="300" width="48" height="64" rx="4" fill="#FFFFFF" stroke="#6B7B3C" stroke-width="1"/>
+  <text x="288" y="320" fill="#6B7B3C" font-family="Playfair Display, Georgia, serif" font-size="8" font-weight="600" text-anchor="middle">CHILLI</text>
+  <text x="288" y="332" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="6" text-anchor="middle">FIRE KING</text>
+  <rect x="272" y="340" width="32" height="16" rx="2" fill="#6B7B3C" fill-opacity="0.2"/>
+
+  <!-- Video indicator -->
+  <rect x="322" y="272" width="36" height="20" rx="4" fill="#5D4E37"/>
+  <polygon points="334,280 334,286 340,283" fill="#FFFFFF"/>
+  <text x="346" y="286" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="8">8</text>
+
+  <text x="218" y="404" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">Chilli Fire King</text>
+  <text x="218" y="422" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11">Premium hybrid variety</text>
+
+  <!-- Rating -->
+  <text x="218" y="442" fill="#D4A84B" font-family="Inter, sans-serif" font-size="11">4.6</text>
+  <text x="238" y="442" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11">(890 reviews)</text>
+
+  <!-- Price and Add -->
+  <text x="218" y="466" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="16" font-weight="600">Rs 380</text>
+  <text x="278" y="466" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" fill-opacity="0.6">/10g pack</text>
+
+  <rect x="320" y="450" width="44" height="32" rx="6" fill="#6B7B3C"/>
+  <text x="342" y="471" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Add</text>
+
+  <!-- More Products Section -->
+  <text x="20" y="524" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">All Seeds</text>
+
+  <!-- Product List Item 1: Okra -->
+  <rect x="16" y="540" width="358" height="88" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="540" width="358" height="88" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <rect x="28" y="552" width="64" height="64" rx="6" fill="#D4A84B" fill-opacity="0.1"/>
+  <rect x="44" y="568" width="32" height="40" rx="3" fill="#FFFFFF" stroke="#D4A84B" stroke-width="1"/>
+  <text x="60" y="584" fill="#D4A84B" font-family="Playfair Display, Georgia, serif" font-size="6" font-weight="600" text-anchor="middle">OKRA</text>
+
+  <text x="108" y="572" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">Okra Premium Green</text>
+  <text x="108" y="590" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11">Early maturing, tender pods</text>
+  <text x="108" y="610" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Rs 320</text>
+  <text x="160" y="610" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" fill-opacity="0.6">/10g pack</text>
+
+  <rect x="310" y="568" width="52" height="32" rx="6" fill="#6B7B3C"/>
+  <text x="336" y="589" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Add</text>
+
+  <!-- Product List Item 2: Brinjal -->
+  <rect x="16" y="640" width="358" height="88" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="640" width="358" height="88" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <rect x="28" y="652" width="64" height="64" rx="6" fill="#5D4E37" fill-opacity="0.08"/>
+  <rect x="44" y="668" width="32" height="40" rx="3" fill="#FFFFFF" stroke="#5D4E37" stroke-width="1"/>
+  <text x="60" y="684" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="5" font-weight="600" text-anchor="middle">BRINJAL</text>
+
+  <text x="108" y="672" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">Brinjal Purple King</text>
+  <text x="108" y="690" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11">High yield, glossy fruit</text>
+  <text x="108" y="710" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Rs 280</text>
+  <text x="160" y="710" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" fill-opacity="0.6">/10g pack</text>
+
+  <rect x="310" y="668" width="52" height="32" rx="6" fill="#6B7B3C"/>
+  <text x="336" y="689" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Add</text>
+
+  <!-- Bottom Navigation -->
+  <rect y="764" width="390" height="80" fill="#FFFFFF"/>
+  <rect y="764" width="390" height="1" fill="#E8E0D0"/>
+
+  <!-- Nav Items -->
+  <!-- Home -->
+  <rect x="46" y="788" width="16" height="16" rx="2" fill="#5D4E37" fill-opacity="0.4"/>
+  <text x="54" y="820" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">Home</text>
+
+  <!-- Shop - Active -->
+  <rect x="94" y="776" width="48" height="48" rx="8" fill="#C45D3E" fill-opacity="0.1"/>
+  <rect x="110" y="788" width="16" height="16" rx="2" fill="#C45D3E"/>
+  <text x="118" y="820" fill="#C45D3E" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Shop</text>
+
+  <!-- Learn -->
+  <rect x="186" y="788" width="16" height="16" rx="2" fill="#5D4E37" fill-opacity="0.4"/>
+  <text x="194" y="820" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">Learn</text>
+
+  <!-- Calendar -->
+  <rect x="262" y="788" width="16" height="16" rx="2" fill="#5D4E37" fill-opacity="0.4"/>
+  <text x="270" y="820" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">Calendar</text>
+
+  <!-- Profile -->
+  <circle cx="338" cy="796" r="10" fill="#5D4E37" fill-opacity="0.4"/>
+  <text x="338" y="820" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">Profile</text>
+
+</svg>

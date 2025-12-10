@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="1100" viewBox="0 0 390 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="390" height="1100" fill="#F5F0E6"/>
+
+  <!-- Status Bar -->
+  <rect width="390" height="44" fill="#5D4E37"/>
+  <text x="20" y="28" fill="#F5F0E6" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">9:41</text>
+  <text x="340" y="28" fill="#F5F0E6" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">85%</text>
+
+  <!-- Header -->
+  <rect y="44" width="390" height="72" fill="#C45D3E"/>
+
+  <!-- Back Button -->
+  <polygon points="28,80 20,80 24,76 20,80 24,84" fill="#F5F0E6"/>
+  <text x="40" y="84" fill="#F5F0E6" font-family="Inter, sans-serif" font-size="14">Back</text>
+
+  <text x="195" y="76" fill="#F5F0E6" font-family="Playfair Display, Georgia, serif" font-size="18" font-weight="600" text-anchor="middle">My Growing Calendar</text>
+  <text x="195" y="100" fill="#F5F0E6" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.85" text-anchor="middle">AI-personalized schedule for your farm</text>
+
+  <!-- Current Month Header -->
+  <rect x="16" y="132" width="358" height="56" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="132" width="358" height="56" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <!-- Month navigation -->
+  <polygon points="36,160 44,154 44,166" fill="#5D4E37"/>
+  <text x="195" y="168" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="18" font-weight="600" text-anchor="middle">December 2024</text>
+  <polygon points="354,160 346,154 346,166" fill="#5D4E37"/>
+
+  <!-- Mini Calendar -->
+  <rect x="16" y="200" width="358" height="200" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="200" width="358" height="200" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <!-- Day headers -->
+  <text x="46" y="228" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">S</text>
+  <text x="96" y="228" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">M</text>
+  <text x="146" y="228" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">T</text>
+  <text x="196" y="228" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">W</text>
+  <text x="246" y="228" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">T</text>
+  <text x="296" y="228" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">F</text>
+  <text x="346" y="228" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">S</text>
+
+  <!-- Week 1 -->
+  <text x="46" y="260" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">1</text>
+  <text x="96" y="260" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">2</text>
+  <text x="146" y="260" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">3</text>
+  <text x="196" y="260" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">4</text>
+  <text x="246" y="260" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">5</text>
+  <text x="296" y="260" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">6</text>
+  <text x="346" y="260" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">7</text>
+
+  <!-- Week 2 -->
+  <text x="46" y="292" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">8</text>
+  <text x="96" y="292" fill="#5D4E37" fill-opacity="0.4" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">9</text>
+  <!-- Today -->
+  <circle cx="146" cy="288" r="16" fill="#C45D3E"/>
+  <text x="146" y="292" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" text-anchor="middle">10</text>
+  <!-- Event indicator -->
+  <circle cx="196" cy="298" r="4" fill="#6B7B3C"/>
+  <text x="196" y="292" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">11</text>
+  <text x="246" y="292" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">12</text>
+  <circle cx="296" cy="298" r="4" fill="#D4A84B"/>
+  <text x="296" y="292" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">13</text>
+  <text x="346" y="292" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">14</text>
+
+  <!-- Week 3 -->
+  <circle cx="46" cy="330" r="4" fill="#6B7B3C"/>
+  <text x="46" y="324" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">15</text>
+  <text x="96" y="324" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">16</text>
+  <text x="146" y="324" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">17</text>
+  <circle cx="196" cy="330" r="4" fill="#C45D3E"/>
+  <text x="196" y="324" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">18</text>
+  <text x="246" y="324" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">19</text>
+  <text x="296" y="324" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">20</text>
+  <text x="346" y="324" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">21</text>
+
+  <!-- Week 4 -->
+  <text x="46" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">22</text>
+  <text x="96" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">23</text>
+  <circle cx="146" cy="362" r="4" fill="#6B7B3C"/>
+  <text x="146" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">24</text>
+  <text x="196" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">25</text>
+  <text x="246" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">26</text>
+  <text x="296" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">27</text>
+  <text x="346" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">28</text>
+
+  <!-- Week 5 -->
+  <text x="46" y="388" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">29</text>
+  <text x="96" y="388" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">30</text>
+  <text x="146" y="388" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">31</text>
+
+  <!-- Legend -->
+  <circle cx="220" y="388" r="4" fill="#6B7B3C"/>
+  <text x="232" y="392" fill="#5D4E37" font-family="Inter, sans-serif" font-size="9">Activity</text>
+  <circle cx="280" y="388" r="4" fill="#D4A84B"/>
+  <text x="292" y="392" fill="#5D4E37" font-family="Inter, sans-serif" font-size="9">Spray</text>
+  <circle cx="330" y="388" r="4" fill="#C45D3E"/>
+  <text x="342" y="392" fill="#5D4E37" font-family="Inter, sans-serif" font-size="9">Alert</text>
+
+  <!-- Today's Tasks Section -->
+  <text x="20" y="432" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">Today's Schedule</text>
+  <text x="324" y="432" fill="#C45D3E" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500">Dec 10</text>
+
+  <!-- Task Card 1: Irrigation -->
+  <rect x="16" y="448" width="358" height="88" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="448" width="358" height="88" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+  <rect x="16" y="448" width="4" height="88" rx="2" fill="#6B7B3C"/>
+
+  <!-- Time -->
+  <rect x="32" y="464" width="56" height="56" rx="6" fill="#6B7B3C" fill-opacity="0.1"/>
+  <text x="60" y="488" fill="#6B7B3C" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" text-anchor="middle">06:00</text>
+  <text x="60" y="504" fill="#6B7B3C" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">AM</text>
+
+  <text x="104" y="480" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">Morning Irrigation</text>
+  <text x="104" y="498" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.7">Tomato - Block A</text>
+  <text x="104" y="520" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11">Water requirement: 25L per plant</text>
+
+  <!-- Checkbox -->
+  <rect x="324" y="476" width="32" height="32" rx="6" fill="none" stroke="#6B7B3C" stroke-width="1.5"/>
+
+  <!-- Task Card 2: Surveillance -->
+  <rect x="16" y="548" width="358" height="88" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="548" width="358" height="88" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+  <rect x="16" y="548" width="4" height="88" rx="2" fill="#D4A84B"/>
+
+  <!-- Time -->
+  <rect x="32" y="564" width="56" height="56" rx="6" fill="#D4A84B" fill-opacity="0.1"/>
+  <text x="60" y="588" fill="#D4A84B" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" text-anchor="middle">10:00</text>
+  <text x="60" y="604" fill="#D4A84B" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">AM</text>
+
+  <text x="104" y="580" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">Disease Surveillance</text>
+  <text x="104" y="598" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.7">All crops - Weekly check</text>
+  <text x="104" y="620" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11">Inspect for early blight symptoms</text>
+
+  <!-- Checkbox (checked) -->
+  <rect x="324" y="576" width="32" height="32" rx="6" fill="#6B7B3C"/>
+  <polyline points="332,592 340,600 352,584" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Upcoming Section -->
+  <text x="20" y="668" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">Upcoming This Week</text>
+
+  <!-- Upcoming Task 1 -->
+  <rect x="16" y="684" width="358" height="72" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="684" width="358" height="72" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <rect x="32" y="700" width="48" height="40" rx="6" fill="#6B7B3C" fill-opacity="0.08"/>
+  <text x="56" y="716" fill="#6B7B3C" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Dec</text>
+  <text x="56" y="732" fill="#6B7B3C" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" text-anchor="middle">11</text>
+
+  <text x="96" y="716" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="13" font-weight="600">Fertilizer Application</text>
+  <text x="96" y="736" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.7">NPK 19:19:19 @ 5g/plant</text>
+
+  <!-- Upcoming Task 2 -->
+  <rect x="16" y="768" width="358" height="72" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="768" width="358" height="72" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <rect x="32" y="784" width="48" height="40" rx="6" fill="#D4A84B" fill-opacity="0.08"/>
+  <text x="56" y="800" fill="#D4A84B" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Dec</text>
+  <text x="56" y="816" fill="#D4A84B" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" text-anchor="middle">13</text>
+
+  <text x="96" y="800" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="13" font-weight="600">Preventive Spray</text>
+  <text x="96" y="820" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.7">Mancozeb - Weather advisory</text>
+
+  <!-- Upcoming Task 3 -->
+  <rect x="16" y="852" width="358" height="72" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="852" width="358" height="72" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <rect x="32" y="868" width="48" height="40" rx="6" fill="#6B7B3C" fill-opacity="0.08"/>
+  <text x="56" y="884" fill="#6B7B3C" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Dec</text>
+  <text x="56" y="900" fill="#6B7B3C" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" text-anchor="middle">15</text>
+
+  <text x="96" y="884" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="13" font-weight="600">Staking and Pruning</text>
+  <text x="96" y="904" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.7">Support flowering branches</text>
+
+  <!-- Crop Progress Summary -->
+  <text x="20" y="956" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">Crop Progress</text>
+
+  <rect x="16" y="972" width="358" height="112" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="972" width="358" height="112" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <!-- Crop 1 Progress -->
+  <text x="32" y="1000" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" font-weight="500">Tomato Hybrid 512</text>
+  <text x="320" y="1000" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="11">Day 45</text>
+  <rect x="32" y="1008" width="326" height="8" rx="4" fill="#E8E0D0"/>
+  <rect x="32" y="1008" width="122" height="8" rx="4" fill="#C45D3E"/>
+  <text x="32" y="1032" fill="#C45D3E" font-family="Inter, sans-serif" font-size="10">Flowering Stage</text>
+  <text x="310" y="1032" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="10">38%</text>
+
+  <!-- Crop 2 Progress -->
+  <text x="32" y="1056" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" font-weight="500">Chilli Fire King</text>
+  <text x="320" y="1056" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="11">Day 28</text>
+  <rect x="32" y="1064" width="326" height="8" rx="4" fill="#E8E0D0"/>
+  <rect x="32" y="1064" width="82" height="8" rx="4" fill="#6B7B3C"/>
+  <text x="32" y="1084" fill="#6B7B3C" font-family="Inter, sans-serif" font-size="10">Vegetative Stage</text>
+  <text x="310" y="1084" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="10">25%</text>
+
+</svg>

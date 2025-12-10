@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="1000" viewBox="0 0 390 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="390" height="1000" fill="#F5F0E6"/>
+
+  <!-- Status Bar -->
+  <rect width="390" height="44" fill="#5D4E37"/>
+  <text x="20" y="28" fill="#F5F0E6" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">9:41</text>
+  <text x="340" y="28" fill="#F5F0E6" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">85%</text>
+
+  <!-- Header -->
+  <rect y="44" width="390" height="72" fill="#FFFFFF"/>
+  <rect y="115" width="390" height="1" fill="#E8E0D0"/>
+
+  <!-- Back Button -->
+  <polygon points="28,80 20,80 24,76 20,80 24,84" fill="#5D4E37"/>
+  <text x="40" y="84" fill="#5D4E37" font-family="Inter, sans-serif" font-size="14">Back</text>
+
+  <text x="195" y="76" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="18" font-weight="600" text-anchor="middle">Predictive Alerts</text>
+  <text x="195" y="100" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.6" text-anchor="middle">AI-powered early warning system</text>
+
+  <!-- Alert Summary Card -->
+  <rect x="16" y="132" width="358" height="100" rx="8" fill="#C45D3E" fill-opacity="0.08"/>
+  <rect x="16" y="132" width="358" height="100" rx="8" stroke="#C45D3E" stroke-width="1"/>
+
+  <!-- Alert Icon -->
+  <circle cx="56" cy="182" r="28" fill="#C45D3E" fill-opacity="0.15"/>
+  <text x="56" y="190" fill="#C45D3E" font-family="Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle">!</text>
+
+  <text x="100" y="160" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" font-weight="500" letter-spacing="1">ACTIVE ALERTS</text>
+  <text x="100" y="186" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="20" font-weight="600">2 Alerts Require Attention</text>
+  <text x="100" y="210" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.7">1 Critical, 1 Advisory</text>
+
+  <!-- Data Triangulation Panel -->
+  <text x="20" y="264" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">Risk Analysis Data</text>
+  <text x="20" y="282" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.6">Weather, soil and crop data combined for predictions</text>
+
+  <rect x="16" y="296" width="358" height="136" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="296" width="358" height="136" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <!-- Weather Data -->
+  <rect x="28" y="308" width="100" height="108" rx="6" fill="#5D4E37" fill-opacity="0.03"/>
+  <text x="78" y="328" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" font-weight="500" letter-spacing="0.5" text-anchor="middle">WEATHER</text>
+
+  <text x="78" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="20" font-weight="600" text-anchor="middle">28°C</text>
+  <text x="78" y="376" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" fill-opacity="0.7" text-anchor="middle">Humidity 72%</text>
+  <text x="78" y="392" fill="#C45D3E" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Rain 40%</text>
+
+  <!-- Soil Data -->
+  <rect x="140" y="308" width="100" height="108" rx="6" fill="#5D4E37" fill-opacity="0.03"/>
+  <text x="190" y="328" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" font-weight="500" letter-spacing="0.5" text-anchor="middle">SOIL</text>
+
+  <text x="190" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="20" font-weight="600" text-anchor="middle">6.5 pH</text>
+  <text x="190" y="376" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" fill-opacity="0.7" text-anchor="middle">Red Loamy</text>
+  <text x="190" y="392" fill="#6B7B3C" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Adequate moisture</text>
+
+  <!-- Crop Stage Data -->
+  <rect x="252" y="308" width="108" height="108" rx="6" fill="#5D4E37" fill-opacity="0.03"/>
+  <text x="306" y="328" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" font-weight="500" letter-spacing="0.5" text-anchor="middle">CROP STAGE</text>
+
+  <text x="306" y="356" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="20" font-weight="600" text-anchor="middle">45</text>
+  <text x="306" y="376" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" fill-opacity="0.7" text-anchor="middle">Days after sowing</text>
+  <text x="306" y="392" fill="#D4A84B" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Flowering stage</text>
+
+  <!-- Active Alerts Section -->
+  <text x="20" y="464" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">Active Alerts</text>
+
+  <!-- Critical Alert Card -->
+  <rect x="16" y="480" width="358" height="180" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="480" width="358" height="180" rx="8" stroke="#C45D3E" stroke-width="1"/>
+  <rect x="16" y="480" width="358" height="6" rx="3" fill="#C45D3E"/>
+
+  <!-- Alert Badge -->
+  <rect x="28" y="500" width="72" height="24" rx="4" fill="#C45D3E"/>
+  <text x="64" y="516" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">CRITICAL</text>
+
+  <text x="112" y="516" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="11" fill-opacity="0.6">24-48 hours</text>
+
+  <text x="28" y="548" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="15" font-weight="600">Late Blight Risk - Tomato</text>
+  <text x="28" y="568" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.7">High probability based on current conditions</text>
+
+  <!-- Risk Factors -->
+  <text x="28" y="596" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" font-weight="500" letter-spacing="1">CONTRIBUTING FACTORS</text>
+
+  <rect x="28" y="608" width="120" height="20" rx="4" fill="#C45D3E" fill-opacity="0.08"/>
+  <text x="88" y="622" fill="#C45D3E" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">High humidity (72%)</text>
+
+  <rect x="156" y="608" width="100" height="20" rx="4" fill="#C45D3E" fill-opacity="0.08"/>
+  <text x="206" y="622" fill="#C45D3E" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">Rain forecast</text>
+
+  <rect x="264" y="608" width="96" height="20" rx="4" fill="#C45D3E" fill-opacity="0.08"/>
+  <text x="312" y="622" fill="#C45D3E" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">Temp 24-28°C</text>
+
+  <!-- Action Button -->
+  <rect x="28" y="636" width="160" height="36" rx="6" fill="#C45D3E"/>
+  <text x="108" y="660" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">View Prevention Steps</text>
+
+  <rect x="200" y="636" width="160" height="36" rx="6" fill="none" stroke="#5D4E37" stroke-width="1"/>
+  <text x="280" y="660" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Dismiss Alert</text>
+
+  <!-- Advisory Alert Card -->
+  <rect x="16" y="676" width="358" height="160" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="676" width="358" height="160" rx="8" stroke="#D4A84B" stroke-width="1"/>
+  <rect x="16" y="676" width="358" height="6" rx="3" fill="#D4A84B"/>
+
+  <!-- Alert Badge -->
+  <rect x="28" y="696" width="72" height="24" rx="4" fill="#D4A84B"/>
+  <text x="64" y="712" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ADVISORY</text>
+
+  <text x="112" y="712" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="11" fill-opacity="0.6">3-5 days</text>
+
+  <text x="28" y="744" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="15" font-weight="600">Nutrient Deficiency Watch - Chilli</text>
+  <text x="28" y="764" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.7">Yellowing patterns detected in satellite imagery</text>
+
+  <!-- Risk Factors -->
+  <text x="28" y="792" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" font-weight="500" letter-spacing="1">RECOMMENDATION</text>
+  <text x="28" y="812" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12">Apply foliar spray of micronutrients</text>
+
+  <!-- Notification Preferences -->
+  <text x="20" y="868" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">Notification Settings</text>
+
+  <rect x="16" y="884" width="358" height="100" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="884" width="358" height="100" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <!-- Push Notifications -->
+  <text x="32" y="912" fill="#5D4E37" font-family="Inter, sans-serif" font-size="13" font-weight="500">Push Notifications</text>
+  <text x="32" y="928" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.6">Critical and warning alerts</text>
+  <!-- Toggle On -->
+  <rect x="304" y="904" width="48" height="28" rx="14" fill="#6B7B3C"/>
+  <circle cx="338" cy="918" r="10" fill="#FFFFFF"/>
+
+  <!-- SMS Fallback -->
+  <text x="32" y="956" fill="#5D4E37" font-family="Inter, sans-serif" font-size="13" font-weight="500">SMS Fallback</text>
+  <text x="32" y="972" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.6">When app is offline</text>
+  <!-- Toggle On -->
+  <rect x="304" y="948" width="48" height="28" rx="14" fill="#6B7B3C"/>
+  <circle cx="338" cy="962" r="10" fill="#FFFFFF"/>
+
+</svg>
