@@ -2,11 +2,12 @@
 
 import { Header } from '@/components/layouts';
 import { Card, Button } from '@/components/ui';
-import { useStore } from '@/lib/stores/useStore';
+import { useStore, useCartTotal } from '@/lib/stores/useStore';
 import { languages } from '@/i18n/config';
 
 export default function ProfilePage() {
-  const { language, setLanguage, location, cart, cartTotal } = useStore();
+  const { language, setLanguage, location, cart } = useStore();
+  const cartTotal = useCartTotal();
 
   const selectedLanguage = languages.find((l) => l.code === language);
 
@@ -105,7 +106,7 @@ export default function ProfilePage() {
             </div>
             {cart.length > 0 && (
               <p className="font-mono text-lg font-semibold text-primary">
-                Rs {cartTotal().toLocaleString('en-IN')}
+                Rs {cartTotal.toLocaleString('en-IN')}
               </p>
             )}
           </div>

@@ -6,6 +6,24 @@ import { Header } from '@/components/layouts';
 import { Card, Badge, Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui';
 import { getDiseaseById, getDiseasesByCrop } from '@/lib/data/diseases';
 import { cn } from '@/lib/utils';
+import { CROP_EMOJI, SEVERITY_CONFIG } from '@/lib/constants';
+
+// Extended severity config with bg color for this page
+const SEVERITY_CONFIG_EXTENDED: Record<string, { color: 'primary' | 'secondary' | 'success' | 'muted'; label: string; bg: string }> = {
+  critical: { ...SEVERITY_CONFIG.critical, label: 'Critical', bg: 'bg-primary/10' },
+  high: { ...SEVERITY_CONFIG.high, label: 'High Risk', bg: 'bg-primary/10' },
+  medium: { ...SEVERITY_CONFIG.medium, label: 'Medium Risk', bg: 'bg-secondary/10' },
+  low: { ...SEVERITY_CONFIG.low, label: 'Low Risk', bg: 'bg-success/10' },
+};
+
+// Stage configuration (specific to this page)
+const STAGE_CONFIG: Record<string, { label: string; order: number }> = {
+  seedling: { label: 'Seedling', order: 1 },
+  vegetative: { label: 'Vegetative', order: 2 },
+  flowering: { label: 'Flowering', order: 3 },
+  fruiting: { label: 'Fruiting', order: 4 },
+  harvest: { label: 'Harvest', order: 5 },
+};
 
 interface DiseasePageProps {
   params: Promise<{ id: string }>;
@@ -19,32 +37,6 @@ export default function DiseasePage({ params }: DiseasePageProps) {
     notFound();
   }
 
-  const cropEmoji: Record<string, string> = {
-    tomato: '🍅',
-    chilli: '🌶️',
-    okra: '🥒',
-    brinjal: '🍆',
-    cucumber: '🥒',
-    'bottle-gourd': '🫛',
-    cotton: '☁️',
-    maize: '🌽',
-  };
-
-  const severityConfig: Record<string, { color: 'primary' | 'secondary' | 'success' | 'muted'; label: string; bg: string }> = {
-    critical: { color: 'primary', label: 'Critical', bg: 'bg-primary/10' },
-    high: { color: 'primary', label: 'High Risk', bg: 'bg-primary/10' },
-    medium: { color: 'secondary', label: 'Medium Risk', bg: 'bg-secondary/10' },
-    low: { color: 'success', label: 'Low Risk', bg: 'bg-success/10' },
-  };
-
-  const stageConfig: Record<string, { label: string; order: number }> = {
-    seedling: { label: 'Seedling', order: 1 },
-    vegetative: { label: 'Vegetative', order: 2 },
-    flowering: { label: 'Flowering', order: 3 },
-    fruiting: { label: 'Fruiting', order: 4 },
-    harvest: { label: 'Harvest', order: 5 },
-  };
-
   const relatedDiseases = getDiseasesByCrop(disease.crop)
     .filter((d) => d.id !== disease.id)
     .slice(0, 3);
@@ -57,11 +49,11 @@ export default function DiseasePage({ params }: DiseasePageProps) {
         {/* Header */}
         <div className="flex items-start gap-3">
           <div className="w-14 h-14 rounded-xl bg-parchment flex items-center justify-center text-3xl flex-shrink-0">
-            {cropEmoji[disease.crop]}
+            {CROP_EMOJI[disease.crop]}
           </div>
           <div className="flex-1">
-            <Badge color={severityConfig[disease.severity].color} className="mb-1">
-              {severityConfig[disease.severity].label}
+            <Badge color={SEVERITY_CONFIG_EXTENDED[disease.severity].color} className="mb-1">
+              {SEVERITY_CONFIG_EXTENDED[disease.severity].label}
             </Badge>
             <h1 className="font-heading text-lg font-semibold text-earth-brown leading-tight">
               {disease.name}
@@ -90,7 +82,7 @@ export default function DiseasePage({ params }: DiseasePageProps) {
                       : 'bg-parchment/50 text-charcoal/40'
                   )}
                 >
-                  {stageConfig[stage].label}
+                  {STAGE_CONFIG[stage].label}
                 </div>
               );
             })}
@@ -192,9 +184,9 @@ export default function DiseasePage({ params }: DiseasePageProps) {
                         <p className="text-xs text-charcoal/50">{related.nameHi}</p>
                       </div>
                       <Badge
-                        color={severityConfig[related.severity].color}
+                        color={SEVERITY_CONFIG_EXTENDED[related.severity].color}
                       >
-                        {severityConfig[related.severity].label}
+                        {SEVERITY_CONFIG_EXTENDED[related.severity].label}
                       </Badge>
                     </div>
                   </Card>
