@@ -105,7 +105,7 @@ local/
 *.sqlite
 *.sqlite3
 *.db
-data/
+/data/
 
 # Uploads and user content (local dev)
 uploads/
