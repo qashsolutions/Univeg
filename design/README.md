@@ -21,6 +21,12 @@ Kisan Mitra is an agricultural commerce and intelligence platform for Indian far
 | Voice Interface | `mockups/07-voice-interface.svg` | Multilingual voice query assistant |
 | Product Detail | `mockups/08-product-detail.svg` | Full product page with videos and purchase |
 | Web Dashboard | `mockups/09-web-dashboard.svg` | Desktop/web version of the platform |
+| Geo Video Discovery | `mockups/10-geo-video-discovery.svg` | Location-based video feed sorted by distance |
+| Video Player Geo | `mockups/11-video-player-geo.svg` | Video player with geographic context and map |
+| Checkout Payment | `mockups/12-checkout-payment.svg` | Payment method selection (UPI, COD) |
+| Google Pay Flow | `mockups/13-google-pay-flow.svg` | Google Pay UPI payment bottom sheet |
+| Paytm Flow | `mockups/14-paytm-flow.svg` | Paytm wallet/UPI payment flow |
+| Order Confirmation | `mockups/15-order-confirmation.svg` | Payment success and order details |
 
 ---
 
@@ -85,6 +91,7 @@ font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', etc.;
 |----------|-------------|
 | `ARCHITECTURE.md` | Complete platform architecture and system design |
 | `AGENTIC_ARCHITECTURE.md` | Detailed AI agent specifications and data flows |
+| `GEO_VIDEO_ARCHITECTURE.md` | Location-based video matching system and geocoding |
 
 ---
 
