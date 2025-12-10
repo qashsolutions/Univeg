@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "కిసాన్ మిత్ర",
+    "tagline": "మీ వ్యవసాయ సహచరుడు"
+  },
+  "nav": {
+    "home": "హోమ్",
+    "shop": "షాప్",
+    "learn": "నేర్చుకోండి",
+    "calendar": "క్యాలెండర్",
+    "profile": "ప్రొఫైల్"
+  },
+  "home": {
+    "greeting": "శుభోదయం",
+    "weather": "ఈరోజు వాతావరణం",
+    "humidity": "తేమ",
+    "alerts": "యాక్టివ్ అలర్ట్‌లు",
+    "quickActions": "త్వరిత చర్యలు",
+    "featuredSeeds": "ప్రత్యేక విత్తనాలు",
+    "viewAll": "అన్నీ చూడండి"
+  },
+  "actions": {
+    "cropDoctor": "పంట వైద్యుడు",
+    "cropDoctorDesc": "మొక్కల వ్యాధులను గుర్తించండి",
+    "shopSeeds": "విత్తనాలు కొనండి",
+    "shopSeedsDesc": "కేటలాగ్ చూడండి",
+    "myCalendar": "నా క్యాలెండర్",
+    "myCalendarDesc": "షెడ్యూల్ చూడండి",
+    "voiceQuery": "వాయిస్ ప్రశ్న",
+    "voiceQueryDesc": "ఏదైనా అడగండి"
+  },
+  "common": {
+    "loading": "లోడ్ అవుతోంది...",
+    "error": "ఏదో తప్పు జరిగింది",
+    "retry": "మళ్ళీ ప్రయత్నించండి"
+  }
+}

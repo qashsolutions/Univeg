@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "ಕಿಸಾನ್ ಮಿತ್ರ",
+    "tagline": "ನಿಮ್ಮ ಕೃಷಿ ಸಂಗಾತಿ"
+  },
+  "nav": {
+    "home": "ಮುಖಪುಟ",
+    "shop": "ಅಂಗಡಿ",
+    "learn": "ಕಲಿಯಿರಿ",
+    "calendar": "ಕ್ಯಾಲೆಂಡರ್",
+    "profile": "ಪ್ರೊಫೈಲ್"
+  },
+  "home": {
+    "greeting": "ಶುಭೋದಯ",
+    "weather": "ಇಂದಿನ ಹವಾಮಾನ",
+    "humidity": "ತೇವಾಂಶ",
+    "alerts": "ಸಕ್ರಿಯ ಎಚ್ಚರಿಕೆಗಳು",
+    "quickActions": "ತ್ವರಿತ ಕ್ರಿಯೆಗಳು",
+    "featuredSeeds": "ವಿಶೇಷ ಬೀಜಗಳು",
+    "viewAll": "ಎಲ್ಲವನ್ನೂ ನೋಡಿ"
+  },
+  "actions": {
+    "cropDoctor": "ಬೆಳೆ ವೈದ್ಯ",
+    "cropDoctorDesc": "ಸಸ್ಯ ರೋಗಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಿ",
+    "shopSeeds": "ಬೀಜಗಳನ್ನು ಖರೀದಿಸಿ",
+    "shopSeedsDesc": "ಕ್ಯಾಟಲಾಗ್ ನೋಡಿ",
+    "myCalendar": "ನನ್ನ ಕ್ಯಾಲೆಂಡರ್",
+    "myCalendarDesc": "ವೇಳಾಪಟ್ಟಿ ನೋಡಿ",
+    "voiceQuery": "ಧ್ವನಿ ಪ್ರಶ್ನೆ",
+    "voiceQueryDesc": "ಏನಾದರೂ ಕೇಳಿ"
+  },
+  "common": {
+    "loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+    "error": "ಏನೋ ತಪ್ಪಾಯಿತು",
+    "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+  }
+}

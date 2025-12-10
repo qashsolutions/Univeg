@@ -1,0 +1,96 @@
+{
+  "app": {
+    "name": "Kisan Mitra",
+    "tagline": "Your farming companion"
+  },
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "learn": "Learn",
+    "calendar": "Calendar",
+    "profile": "Profile"
+  },
+  "home": {
+    "greeting": "Good Morning",
+    "weather": "Today's Weather",
+    "humidity": "Humidity",
+    "alerts": "Active Alerts",
+    "quickActions": "Quick Actions",
+    "featuredSeeds": "Featured Seeds",
+    "viewAll": "View All"
+  },
+  "actions": {
+    "cropDoctor": "Crop Doctor",
+    "cropDoctorDesc": "Diagnose plant diseases",
+    "shopSeeds": "Shop Seeds",
+    "shopSeedsDesc": "Browse catalog",
+    "myCalendar": "My Calendar",
+    "myCalendarDesc": "View schedule",
+    "voiceQuery": "Voice Query",
+    "voiceQueryDesc": "Ask anything"
+  },
+  "alerts": {
+    "critical": "Critical",
+    "warning": "Warning",
+    "info": "Info"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "pack": "pack",
+    "reviews": "reviews"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "paymentMethod": "Payment Method",
+    "upi": "UPI (Google Pay, Paytm)",
+    "cod": "Cash on Delivery",
+    "placeOrder": "Place Order",
+    "orderConfirmed": "Order Confirmed",
+    "trackOrder": "Track Order",
+    "continueShopping": "Continue Shopping"
+  },
+  "cropDoctor": {
+    "title": "Crop Doctor",
+    "takePhoto": "Take Photo",
+    "uploadPhoto": "Upload Photo",
+    "analyzing": "Analyzing...",
+    "healthy": "Healthy",
+    "infected": "Infection Detected",
+    "confidence": "Confidence",
+    "treatment": "Treatment",
+    "prevention": "Prevention"
+  },
+  "calendar": {
+    "title": "Growing Calendar",
+    "today": "Today",
+    "upcoming": "Upcoming",
+    "completed": "Completed",
+    "sowing": "Sowing",
+    "irrigation": "Irrigation",
+    "fertilizer": "Fertilizer",
+    "pestControl": "Pest Control",
+    "harvest": "Harvest"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort"
+  },
+  "distance": {
+    "nearby": "Nearby",
+    "kmAway": "{{km}} km away"
+  }
+}

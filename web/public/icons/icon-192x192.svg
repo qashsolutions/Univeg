@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="24" fill="#5D4E37"/>
+  <circle cx="96" cy="76" r="36" fill="#6B7B3C"/>
+  <path d="M96 52C96 52 76 72 76 88C76 99.046 84.954 108 96 108C107.046 108 116 99.046 116 88C116 72 96 52 96 52Z" fill="#F5F0E6"/>
+  <text x="96" y="156" fill="#F5F0E6" font-family="Georgia, serif" font-size="24" font-weight="600" text-anchor="middle">KM</text>
+</svg>

@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "किसान मित्र",
+    "tagline": "तुमचा शेती साथीदार"
+  },
+  "nav": {
+    "home": "होम",
+    "shop": "दुकान",
+    "learn": "शिका",
+    "calendar": "कॅलेंडर",
+    "profile": "प्रोफाइल"
+  },
+  "home": {
+    "greeting": "सुप्रभात",
+    "weather": "आजचे हवामान",
+    "humidity": "आर्द्रता",
+    "alerts": "सक्रिय इशारे",
+    "quickActions": "जलद क्रिया",
+    "featuredSeeds": "वैशिष्ट्यपूर्ण बियाणे",
+    "viewAll": "सर्व पहा"
+  },
+  "actions": {
+    "cropDoctor": "पीक डॉक्टर",
+    "cropDoctorDesc": "वनस्पती रोग ओळखा",
+    "shopSeeds": "बियाणे खरेदी करा",
+    "shopSeedsDesc": "कॅटलॉग पहा",
+    "myCalendar": "माझे कॅलेंडर",
+    "myCalendarDesc": "वेळापत्रक पहा",
+    "voiceQuery": "आवाज प्रश्न",
+    "voiceQueryDesc": "काहीही विचारा"
+  },
+  "common": {
+    "loading": "लोड होत आहे...",
+    "error": "काहीतरी चूक झाली",
+    "retry": "पुन्हा प्रयत्न करा"
+  }
+}
