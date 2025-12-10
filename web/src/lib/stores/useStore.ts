@@ -1,9 +1,10 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { useShallow } from 'zustand/react/shallow';
 import type { GeoLocation, LanguageCode, Product, FarmerProfile } from '@/types';
 
 // Cart item with quantity
-interface CartItem {
+export interface CartItem {
   product: Product;
   quantity: number;
 }
@@ -24,8 +25,6 @@ interface AppState {
   removeFromCart: (productId: string) => void;
   updateQuantity: (productId: string, quantity: number) => void;
   clearCart: () => void;
-  cartTotal: () => number;
-  cartCount: () => number;
 
   // User profile
   profile: FarmerProfile | null;
@@ -82,17 +81,6 @@ export const useStore = create<AppState>()(
         }
       },
       clearCart: () => set({ cart: [] }),
-      cartTotal: () => {
-        const { cart } = get();
-        return cart.reduce(
-          (total, item) => total + item.product.price * item.quantity,
-          0
-        );
-      },
-      cartCount: () => {
-        const { cart } = get();
-        return cart.reduce((count, item) => count + item.quantity, 0);
-      },
 
       // Profile
       profile: null,
@@ -113,3 +101,43 @@ export const useStore = create<AppState>()(
     }
   )
 );
+
+// ============================================================================
+// Selectors - Use these to subscribe to specific slices of state
+// These compute derived values only when the cart changes, not on every render
+// ============================================================================
+
+/**
+ * Selector to get cart total - only re-computes when cart changes
+ * Usage: const total = useCartTotal();
+ */
+export const useCartTotal = () =>
+  useStore((state) =>
+    state.cart.reduce(
+      (total, item) => total + item.product.price * item.quantity,
+      0
+    )
+  );
+
+/**
+ * Selector to get cart item count - only re-computes when cart changes
+ * Usage: const count = useCartCount();
+ */
+export const useCartCount = () =>
+  useStore((state) =>
+    state.cart.reduce((count, item) => count + item.quantity, 0)
+  );
+
+/**
+ * Selector to get cart actions without subscribing to cart state
+ * Usage: const { addToCart, removeFromCart } = useCartActions();
+ */
+export const useCartActions = () =>
+  useStore(
+    useShallow((state) => ({
+      addToCart: state.addToCart,
+      removeFromCart: state.removeFromCart,
+      updateQuantity: state.updateQuantity,
+      clearCart: state.clearCart,
+    }))
+  );

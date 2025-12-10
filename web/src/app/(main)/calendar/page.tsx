@@ -1,11 +1,68 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, memo } from 'react';
 import { Header } from '@/components/layouts';
 import { Card, Badge, Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui';
 import { sampleEvents, eventTypeConfig, getUpcomingEvents } from '@/lib/data/calendar';
 import { formatDate, cn } from '@/lib/utils';
+import { CROP_EMOJI } from '@/lib/constants';
 import type { CalendarEvent } from '@/types';
+
+/**
+ * Memoized event card component to prevent unnecessary re-renders
+ */
+const EventCard = memo(function EventCard({
+  event,
+  showDate = false,
+}: {
+  event: CalendarEvent;
+  showDate?: boolean;
+}) {
+  const config = eventTypeConfig[event.type];
+
+  return (
+    <Card
+      padding="sm"
+      className={cn(
+        'flex items-start gap-3',
+        event.completed && 'opacity-60'
+      )}
+    >
+      <div
+        className={cn(
+          'w-10 h-10 rounded-lg flex items-center justify-center text-lg flex-shrink-0',
+          config.color,
+          'bg-opacity-15'
+        )}
+      >
+        {config.icon}
+      </div>
+      <div className="flex-1 min-w-0">
+        <div className="flex items-start justify-between gap-2">
+          <h3
+            className={cn(
+              'font-medium text-sm text-earth-brown leading-tight',
+              event.completed && 'line-through'
+            )}
+          >
+            {event.title}
+          </h3>
+          <span className="text-lg flex-shrink-0">{CROP_EMOJI[event.crop]}</span>
+        </div>
+        {showDate && (
+          <p className="text-[10px] text-charcoal/50 mt-0.5">
+            {formatDate(event.date)}
+          </p>
+        )}
+        {event.notes && (
+          <p className="text-xs text-charcoal/60 mt-1 line-clamp-2">
+            {event.notes}
+          </p>
+        )}
+      </div>
+    </Card>
+  );
+});
 
 export default function CalendarPage() {
   const [selectedDate, setSelectedDate] = useState<string>(
@@ -22,6 +79,9 @@ export default function CalendarPage() {
     const lastDay = new Date(year, month + 1, 0);
     const startPadding = firstDay.getDay();
 
+    // Pre-compute event dates as Set for O(1) lookup instead of O(n) per day
+    const eventDates = new Set(sampleEvents.map((e) => e.date));
+
     const days: { date: string; day: number; isCurrentMonth: boolean; hasEvents: boolean }[] = [];
 
     // Previous month padding
@@ -33,7 +93,7 @@ export default function CalendarPage() {
         date,
         day,
         isCurrentMonth: false,
-        hasEvents: sampleEvents.some((e) => e.date === date),
+        hasEvents: eventDates.has(date),
       });
     }
 
@@ -44,7 +104,7 @@ export default function CalendarPage() {
         date,
         day,
         isCurrentMonth: true,
-        hasEvents: sampleEvents.some((e) => e.date === date),
+        hasEvents: eventDates.has(date),
       });
     }
 
@@ -56,7 +116,7 @@ export default function CalendarPage() {
         date,
         day,
         isCurrentMonth: false,
-        hasEvents: sampleEvents.some((e) => e.date === date),
+        hasEvents: eventDates.has(date),
       });
     }
 
@@ -180,68 +240,5 @@ export default function CalendarPage() {
         </Tabs>
       </div>
     </main>
-  );
-}
-
-function EventCard({
-  event,
-  showDate = false,
-}: {
-  event: CalendarEvent;
-  showDate?: boolean;
-}) {
-  const config = eventTypeConfig[event.type];
-  const cropEmoji: Record<string, string> = {
-    tomato: '🍅',
-    chilli: '🌶️',
-    okra: '🥒',
-    brinjal: '🍆',
-    cucumber: '🥒',
-    'bottle-gourd': '🫛',
-    cotton: '☁️',
-    maize: '🌽',
-  };
-
-  return (
-    <Card
-      padding="sm"
-      className={cn(
-        'flex items-start gap-3',
-        event.completed && 'opacity-60'
-      )}
-    >
-      <div
-        className={cn(
-          'w-10 h-10 rounded-lg flex items-center justify-center text-lg flex-shrink-0',
-          config.color,
-          'bg-opacity-15'
-        )}
-      >
-        {config.icon}
-      </div>
-      <div className="flex-1 min-w-0">
-        <div className="flex items-start justify-between gap-2">
-          <h3
-            className={cn(
-              'font-medium text-sm text-earth-brown leading-tight',
-              event.completed && 'line-through'
-            )}
-          >
-            {event.title}
-          </h3>
-          <span className="text-lg flex-shrink-0">{cropEmoji[event.crop]}</span>
-        </div>
-        {showDate && (
-          <p className="text-[10px] text-charcoal/50 mt-0.5">
-            {formatDate(event.date)}
-          </p>
-        )}
-        {event.notes && (
-          <p className="text-xs text-charcoal/60 mt-1 line-clamp-2">
-            {event.notes}
-          </p>
-        )}
-      </div>
-    </Card>
   );
 }

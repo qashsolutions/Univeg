@@ -10,7 +10,7 @@ interface UseCameraReturn {
   startCamera: () => Promise<void>;
   stopCamera: () => void;
   captureImage: () => string | null;
-  switchCamera: () => Promise<void>;
+  switchCamera: () => void;
   facingMode: 'user' | 'environment';
 }
 
@@ -18,6 +18,8 @@ export function useCamera(): UseCameraReturn {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
+  // Use ref to track streaming state for the effect to avoid stale closures
+  const isStreamingRef = useRef(false);
   const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [facingMode, setFacingMode] = useState<'user' | 'environment'>('environment');
@@ -30,17 +32,24 @@ export function useCamera(): UseCameraReturn {
     if (videoRef.current) {
       videoRef.current.srcObject = null;
     }
+    isStreamingRef.current = false;
     setIsStreaming(false);
   }, []);
 
-  const startCamera = useCallback(async () => {
+  // Internal function to start camera with a specific facing mode
+  const startCameraWithMode = useCallback(async (mode: 'user' | 'environment') => {
     setError(null);
-    stopCamera();
+
+    // Stop existing stream first
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((track) => track.stop());
+      streamRef.current = null;
+    }
 
     try {
       const constraints: MediaStreamConstraints = {
         video: {
-          facingMode: facingMode,
+          facingMode: mode,
           width: { ideal: 1280 },
           height: { ideal: 720 },
         },
@@ -53,6 +62,7 @@ export function useCamera(): UseCameraReturn {
       if (videoRef.current) {
         videoRef.current.srcObject = stream;
         await videoRef.current.play();
+        isStreamingRef.current = true;
         setIsStreaming(true);
       }
     } catch (err) {
@@ -60,18 +70,22 @@ export function useCamera(): UseCameraReturn {
       setError(message);
       console.error('Camera error:', err);
     }
-  }, [facingMode, stopCamera]);
+  }, []);
 
-  const switchCamera = useCallback(async () => {
+  const startCamera = useCallback(async () => {
+    await startCameraWithMode(facingMode);
+  }, [facingMode, startCameraWithMode]);
+
+  const switchCamera = useCallback(() => {
     setFacingMode((prev) => (prev === 'user' ? 'environment' : 'user'));
   }, []);
 
-  // Restart camera when facing mode changes
+  // Restart camera when facing mode changes (only if already streaming)
   useEffect(() => {
-    if (isStreaming) {
-      startCamera();
+    if (isStreamingRef.current) {
+      startCameraWithMode(facingMode);
     }
-  }, [facingMode]);
+  }, [facingMode, startCameraWithMode]);
 
   const captureImage = useCallback((): string | null => {
     if (!videoRef.current || !canvasRef.current) return null;
