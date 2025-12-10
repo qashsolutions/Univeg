@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "કિસાન મિત્ર",
+    "tagline": "તમારો ખેતી સાથી"
+  },
+  "nav": {
+    "home": "હોમ",
+    "shop": "દુકાન",
+    "learn": "શીખો",
+    "calendar": "કેલેન્ડર",
+    "profile": "પ્રોફાઇલ"
+  },
+  "home": {
+    "greeting": "સુપ્રભાત",
+    "weather": "આજનું હવામાન",
+    "humidity": "ભેજ",
+    "alerts": "સક્રિય ચેતવણીઓ",
+    "quickActions": "ઝડપી ક્રિયાઓ",
+    "featuredSeeds": "વિશેષ બીજ",
+    "viewAll": "બધા જુઓ"
+  },
+  "actions": {
+    "cropDoctor": "પાક ડૉક્ટર",
+    "cropDoctorDesc": "છોડના રોગો ઓળખો",
+    "shopSeeds": "બીજ ખરીદો",
+    "shopSeedsDesc": "કેટલોગ જુઓ",
+    "myCalendar": "મારું કેલેન્ડર",
+    "myCalendarDesc": "શેડ્યૂલ જુઓ",
+    "voiceQuery": "અવાજ પ્રશ્ન",
+    "voiceQueryDesc": "કંઈપણ પૂછો"
+  },
+  "common": {
+    "loading": "લોડ થઈ રહ્યું છે...",
+    "error": "કંઈક ખોટું થયું",
+    "retry": "ફરીથી પ્રયાસ કરો"
+  }
+}

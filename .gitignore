@@ -1,0 +1,149 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment and secrets - NEVER COMMIT THESE
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+*.env
+
+# API keys and credentials - NEVER COMMIT
+.credentials/
+credentials.json
+service-account.json
+firebase-adminsdk*.json
+google-services.json
+*.pem
+*.key
+*.p12
+secrets/
+.secrets/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# PWA generated files
+public/sw.js
+public/workbox-*.js
+public/worker-*.js
+sw.js
+workbox-*.js
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+*.temp
+
+# Debug
+.debug/
+debug.log
+
+# Local development
+.local/
+local/
+
+# Database files (for local development)
+*.sqlite
+*.sqlite3
+*.db
+data/
+
+# Uploads and user content (local dev)
+uploads/
+public/uploads/
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Package manager locks (keep one, ignore others if not using)
+# Uncomment the ones you don't use:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Storybook
+storybook-static/
+
+# PWA assets that are generated
+public/icons/generated/
+
+# Test artifacts
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Sentry
+.sentryclirc
+
+# Bundle analysis
+.next/analyze/
+analyze/
+
+# Local SSL certificates
+*.crt
+*.key
+localhost.pem
+localhost-key.pem

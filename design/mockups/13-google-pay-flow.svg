@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with overlay -->
+  <rect width="390" height="844" fill="#F5F0E6"/>
+  <rect width="390" height="844" fill="#000000" fill-opacity="0.5"/>
+
+  <!-- Google Pay Bottom Sheet -->
+  <rect y="280" width="390" height="564" rx="24" fill="#FFFFFF"/>
+
+  <!-- Handle -->
+  <rect x="171" y="292" width="48" height="4" rx="2" fill="#E8E0D0"/>
+
+  <!-- Google Pay Header -->
+  <rect x="140" y="320" width="110" height="36" rx="4" fill="#FFFFFF"/>
+
+  <!-- Google colors representation -->
+  <circle cx="160" cy="338" r="10" fill="#4285F4"/>
+  <text x="160" y="342" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="10" font-weight="700" text-anchor="middle">G</text>
+  <text x="200" y="344" fill="#5D4E37" font-family="Inter, sans-serif" font-size="16" font-weight="500">Pay</text>
+
+  <!-- Payment Amount -->
+  <text x="195" y="400" fill="#5D4E37" font-family="Inter, sans-serif" font-size="14" fill-opacity="0.6" text-anchor="middle">Pay to Kisan Mitra</text>
+  <text x="195" y="448" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="40" font-weight="600" text-anchor="middle">Rs 900</text>
+
+  <!-- Merchant Info -->
+  <rect x="32" y="480" width="326" height="72" rx="12" fill="#F5F0E6"/>
+
+  <circle cx="68" cy="516" r="20" fill="#C45D3E" fill-opacity="0.1"/>
+  <text x="68" y="522" fill="#C45D3E" font-family="Playfair Display, Georgia, serif" font-size="12" font-weight="600" text-anchor="middle">KM</text>
+
+  <text x="104" y="508" fill="#5D4E37" font-family="Inter, sans-serif" font-size="14" font-weight="500">Kisan Mitra Seeds Pvt Ltd</text>
+  <text x="104" y="528" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.6">kisanmitra@icici</text>
+
+  <!-- Verified badge -->
+  <rect x="280" y="500" width="64" height="24" rx="4" fill="#6B7B3C" fill-opacity="0.1"/>
+  <text x="312" y="517" fill="#6B7B3C" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Verified</text>
+
+  <!-- Order Details -->
+  <text x="32" y="584" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" letter-spacing="1">ORDER DETAILS</text>
+
+  <rect x="32" y="600" width="326" height="64" rx="8" fill="#FFFFFF" stroke="#E8E0D0" stroke-width="1"/>
+
+  <text x="48" y="624" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12">Tomato Hybrid 512 x 2</text>
+  <text x="48" y="644" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.6">Order #KM2024121001</text>
+  <text x="340" y="636" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="end">Rs 900</text>
+
+  <!-- Select Bank/UPI -->
+  <text x="32" y="700" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" letter-spacing="1">PAY FROM</text>
+
+  <!-- Bank Account Option -->
+  <rect x="32" y="716" width="158" height="72" rx="8" fill="#4285F4" fill-opacity="0.08"/>
+  <rect x="32" y="716" width="158" height="72" rx="8" stroke="#4285F4" stroke-width="2"/>
+
+  <rect x="48" y="732" width="36" height="24" rx="4" fill="#4285F4"/>
+  <text x="66" y="750" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">SBI</text>
+
+  <text x="48" y="772" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500">State Bank ****4521</text>
+
+  <!-- Selected indicator -->
+  <circle cx="168" cy="736" r="8" fill="#4285F4"/>
+  <polyline points="164,736 167,739 174,732" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+
+  <!-- Another Bank Option -->
+  <rect x="200" y="716" width="158" height="72" rx="8" fill="#FFFFFF" stroke="#E8E0D0" stroke-width="1"/>
+
+  <rect x="216" y="732" width="36" height="24" rx="4" fill="#0078D4"/>
+  <text x="234" y="750" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="9" font-weight="600" text-anchor="middle">HDFC</text>
+
+  <text x="216" y="772" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500">HDFC Bank ****8832</text>
+
+  <!-- Pay Button -->
+  <rect x="32" y="808" width="326" height="52" rx="26" fill="#4285F4"/>
+  <text x="195" y="842" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="16" font-weight="600" text-anchor="middle">Pay Rs 900</text>
+
+  <!-- Security note -->
+  <text x="195" y="876" fill="#5D4E37" font-family="Inter, sans-serif" font-size="10" fill-opacity="0.5" text-anchor="middle">Secured by Google Pay. Protected by UPI.</text>
+
+</svg>

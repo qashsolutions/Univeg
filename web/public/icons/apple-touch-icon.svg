@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" fill="#5D4E37"/>
+  <circle cx="90" cy="70" r="34" fill="#6B7B3C"/>
+  <path d="M90 48C90 48 71 66 71 81C71 91.493 79.507 100 90 100C100.493 100 109 91.493 109 81C109 66 90 48 90 48Z" fill="#F5F0E6"/>
+  <text x="90" y="146" fill="#F5F0E6" font-family="Georgia, serif" font-size="22" font-weight="600" text-anchor="middle">KM</text>
+</svg>

@@ -1,0 +1,48 @@
+{
+  "name": "Kisan Mitra",
+  "short_name": "Kisan Mitra",
+  "description": "Agricultural commerce and intelligence platform for Indian farmers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F0E6",
+  "theme_color": "#5D4E37",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["agriculture", "shopping", "education"],
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Shop Seeds",
+      "short_name": "Shop",
+      "description": "Browse seed catalog",
+      "url": "/shop"
+    },
+    {
+      "name": "Crop Doctor",
+      "short_name": "Doctor",
+      "description": "Diagnose plant diseases",
+      "url": "/crop-doctor"
+    },
+    {
+      "name": "My Calendar",
+      "short_name": "Calendar",
+      "description": "View farming schedule",
+      "url": "/calendar"
+    }
+  ],
+  "prefer_related_applications": false
+}

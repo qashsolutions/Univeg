@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="900" viewBox="0 0 390 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="390" height="900" fill="#F5F0E6"/>
+
+  <!-- Status Bar -->
+  <rect width="390" height="44" fill="#6B7B3C"/>
+  <text x="20" y="28" fill="#FFFFFF" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">9:41</text>
+  <text x="340" y="28" fill="#FFFFFF" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">85%</text>
+
+  <!-- Success Header -->
+  <rect y="44" width="390" height="200" fill="#6B7B3C"/>
+
+  <!-- Checkmark Circle -->
+  <circle cx="195" cy="124" r="44" fill="#FFFFFF" fill-opacity="0.2"/>
+  <circle cx="195" cy="124" r="32" fill="#FFFFFF"/>
+  <polyline points="175,124 189,138 215,110" fill="none" stroke="#6B7B3C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Success Message -->
+  <text x="195" y="196" fill="#FFFFFF" font-family="Playfair Display, Georgia, serif" font-size="22" font-weight="600" text-anchor="middle">Payment Successful!</text>
+  <text x="195" y="224" fill="#FFFFFF" fill-opacity="0.85" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">Your order has been placed</text>
+
+  <!-- Order Details Card -->
+  <rect x="16" y="260" width="358" height="200" rx="12" fill="#FFFFFF"/>
+  <rect x="16" y="260" width="358" height="200" rx="12" stroke="#E8E0D0" stroke-width="1"/>
+
+  <text x="32" y="292" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" letter-spacing="1">ORDER DETAILS</text>
+
+  <!-- Order ID -->
+  <text x="32" y="324" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.6">Order ID</text>
+  <text x="340" y="324" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12" font-weight="500" text-anchor="end">#KM2024121001</text>
+
+  <!-- Payment Method -->
+  <text x="32" y="352" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.6">Payment Method</text>
+  <text x="340" y="352" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" text-anchor="end">Google Pay</text>
+
+  <!-- Transaction ID -->
+  <text x="32" y="380" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.6">Transaction ID</text>
+  <text x="340" y="380" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="11" text-anchor="end">UPI123456789012</text>
+
+  <!-- Date & Time -->
+  <text x="32" y="408" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.6">Date and Time</text>
+  <text x="340" y="408" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" text-anchor="end">Dec 10, 2024, 10:45 AM</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="428" x2="358" y2="428" stroke="#E8E0D0" stroke-width="1"/>
+
+  <!-- Amount Paid -->
+  <text x="32" y="456" fill="#5D4E37" font-family="Inter, sans-serif" font-size="14" font-weight="500">Amount Paid</text>
+  <text x="340" y="456" fill="#6B7B3C" font-family="JetBrains Mono, monospace" font-size="18" font-weight="600" text-anchor="end">Rs 900</text>
+
+  <!-- Items Ordered -->
+  <rect x="16" y="476" width="358" height="120" rx="12" fill="#FFFFFF"/>
+  <rect x="16" y="476" width="358" height="120" rx="12" stroke="#E8E0D0" stroke-width="1"/>
+
+  <text x="32" y="508" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" letter-spacing="1">ITEMS ORDERED</text>
+
+  <!-- Product -->
+  <rect x="32" y="524" width="48" height="48" rx="6" fill="#C45D3E" fill-opacity="0.1"/>
+  <text x="56" y="554" fill="#C45D3E" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600" text-anchor="middle">T</text>
+
+  <text x="96" y="544" fill="#5D4E37" font-family="Inter, sans-serif" font-size="13" font-weight="500">Tomato Hybrid 512</text>
+  <text x="96" y="564" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.6">10g pack x 2</text>
+
+  <text x="340" y="554" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="13" text-anchor="end">Rs 900</text>
+
+  <!-- Delivery Information -->
+  <rect x="16" y="612" width="358" height="140" rx="12" fill="#FFFFFF"/>
+  <rect x="16" y="612" width="358" height="140" rx="12" stroke="#E8E0D0" stroke-width="1"/>
+
+  <text x="32" y="644" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" letter-spacing="1">DELIVERY INFORMATION</text>
+
+  <!-- Expected Delivery -->
+  <rect x="32" y="660" width="200" height="40" rx="6" fill="#6B7B3C" fill-opacity="0.1"/>
+  <text x="132" y="676" fill="#6B7B3C" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">EXPECTED DELIVERY</text>
+  <text x="132" y="694" fill="#6B7B3C" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" text-anchor="middle">Dec 14-16, 2024</text>
+
+  <!-- Delivery Address -->
+  <text x="32" y="724" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" font-weight="500">Ramesh Patil</text>
+  <text x="32" y="744" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.7">Village Ozar, Taluka Sinnar, Nashik - 422103</text>
+
+  <!-- Action Buttons -->
+  <rect x="16" y="768" width="172" height="48" rx="8" fill="#FFFFFF" stroke="#5D4E37" stroke-width="1"/>
+  <text x="102" y="798" fill="#5D4E37" font-family="Inter, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Track Order</text>
+
+  <rect x="202" y="768" width="172" height="48" rx="8" fill="#5D4E37"/>
+  <text x="288" y="798" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Continue Shopping</text>
+
+  <!-- Help Text -->
+  <text x="195" y="848" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.5" text-anchor="middle">Need help? Contact support at 1800-XXX-XXXX</text>
+
+  <!-- Download Invoice -->
+  <rect x="140" y="864" width="110" height="28" rx="4" fill="none" stroke="#D4A84B" stroke-width="1"/>
+  <text x="195" y="883" fill="#D4A84B" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">Download Invoice</text>
+
+</svg>

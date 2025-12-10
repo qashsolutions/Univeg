@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="390" height="844" fill="#F5F0E6"/>
+
+  <!-- Status Bar - Dark for video -->
+  <rect width="390" height="44" fill="#1A1A1A"/>
+  <text x="20" y="28" fill="#FFFFFF" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">9:41</text>
+  <text x="340" y="28" fill="#FFFFFF" font-family="SF Pro, Inter, sans-serif" font-size="12" font-weight="500">85%</text>
+
+  <!-- Video Player Area -->
+  <rect y="44" width="390" height="220" fill="#1A1A1A"/>
+
+  <!-- Video Content Placeholder -->
+  <rect x="40" y="80" width="310" height="160" fill="#2D2D2D" rx="4"/>
+
+  <!-- Field scene representation -->
+  <rect x="40" y="180" width="310" height="60" fill="#6B7B3C" fill-opacity="0.3"/>
+  <ellipse cx="120" cy="200" rx="30" ry="20" fill="#6B7B3C" fill-opacity="0.4"/>
+  <ellipse cx="200" cy="195" rx="40" ry="25" fill="#6B7B3C" fill-opacity="0.5"/>
+  <ellipse cx="280" cy="200" rx="35" ry="20" fill="#6B7B3C" fill-opacity="0.4"/>
+
+  <!-- Tomato plants -->
+  <circle cx="140" cy="160" r="12" fill="#C45D3E" fill-opacity="0.6"/>
+  <circle cx="180" cy="155" r="10" fill="#C45D3E" fill-opacity="0.5"/>
+  <circle cx="220" cy="158" r="14" fill="#C45D3E" fill-opacity="0.6"/>
+  <circle cx="260" cy="162" r="11" fill="#C45D3E" fill-opacity="0.5"/>
+
+  <!-- Play/Pause Button -->
+  <circle cx="195" cy="154" r="24" fill="#FFFFFF" fill-opacity="0.2"/>
+  <rect x="186" y="144" width="6" height="20" rx="1" fill="#FFFFFF"/>
+  <rect x="198" y="144" width="6" height="20" rx="1" fill="#FFFFFF"/>
+
+  <!-- Video Controls -->
+  <rect x="16" y="224" width="358" height="4" rx="2" fill="#5D4E37" fill-opacity="0.3"/>
+  <rect x="16" y="224" width="180" height="4" rx="2" fill="#C45D3E"/>
+  <circle cx="196" cy="226" r="6" fill="#C45D3E"/>
+
+  <text x="20" y="248" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="10">1:52</text>
+  <text x="354" y="248" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="end">3:42</text>
+
+  <!-- Close/Back button -->
+  <circle cx="36" cy="68" r="16" fill="#1A1A1A" fill-opacity="0.6"/>
+  <line x1="30" y1="62" x2="42" y2="74" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="42" y1="62" x2="30" y2="74" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Content Below Video -->
+  <rect y="264" width="390" height="580" fill="#F5F0E6"/>
+
+  <!-- Video Title Section -->
+  <rect x="16" y="280" width="358" height="100" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="280" width="358" height="100" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <text x="32" y="308" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="16" font-weight="600">Tomato Hybrid 512 - Flowering Stage</text>
+  <text x="32" y="332" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.7">High-yield demonstration from local farm</text>
+
+  <!-- View count and date -->
+  <text x="32" y="360" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.5">1,245 views</text>
+  <text x="120" y="360" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.5">Uploaded Nov 15, 2024</text>
+
+  <!-- Language badge -->
+  <rect x="280" y="300" width="80" height="28" rx="6" fill="#D4A84B"/>
+  <text x="320" y="319" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">मराठी</text>
+
+  <!-- Location Context Card -->
+  <rect x="16" y="396" width="358" height="160" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="396" width="358" height="160" rx="8" stroke="#6B7B3C" stroke-width="1"/>
+
+  <text x="32" y="424" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" letter-spacing="1">VIDEO LOCATION</text>
+
+  <!-- Mini Map Representation -->
+  <rect x="32" y="440" width="140" height="100" rx="6" fill="#E8E0D0"/>
+
+  <!-- Map details -->
+  <rect x="40" y="448" width="124" height="84" rx="4" fill="#D4A84B" fill-opacity="0.1"/>
+
+  <!-- Roads representation -->
+  <line x1="48" y1="490" x2="156" y2="490" stroke="#5D4E37" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="100" y1="456" x2="100" y2="524" stroke="#5D4E37" stroke-opacity="0.2" stroke-width="2"/>
+
+  <!-- Video location marker -->
+  <circle cx="80" cy="480" r="8" fill="#C45D3E"/>
+  <circle cx="80" cy="476" r="4" fill="#FFFFFF"/>
+
+  <!-- Your location marker -->
+  <circle cx="120" cy="500" r="8" fill="#6B7B3C"/>
+  <circle cx="120" cy="496" r="4" fill="#FFFFFF"/>
+
+  <!-- Dotted line between -->
+  <line x1="84" y1="484" x2="116" y2="496" stroke="#5D4E37" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- Location Details -->
+  <text x="188" y="456" fill="#C45D3E" font-family="Inter, sans-serif" font-size="10" font-weight="500">VIDEO RECORDED AT</text>
+  <text x="188" y="476" fill="#5D4E37" font-family="Inter, sans-serif" font-size="13" font-weight="500">Sinnar Taluka</text>
+  <text x="188" y="494" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.7">Nashik District, Maharashtra</text>
+  <text x="188" y="514" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="10" fill-opacity="0.5">19.8432° N, 73.9123° E</text>
+
+  <!-- Distance indicator -->
+  <rect x="188" y="524" width="100" height="24" rx="4" fill="#6B7B3C" fill-opacity="0.1"/>
+  <text x="238" y="541" fill="#6B7B3C" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" text-anchor="middle">12 km from you</text>
+
+  <!-- Farmer Info Card -->
+  <rect x="16" y="572" width="358" height="88" rx="8" fill="#FFFFFF"/>
+  <rect x="16" y="572" width="358" height="88" rx="8" stroke="#E8E0D0" stroke-width="1"/>
+
+  <text x="32" y="600" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" font-weight="500" letter-spacing="1">FARMER</text>
+
+  <!-- Avatar -->
+  <circle cx="52" cy="632" r="20" fill="#D4A84B" fill-opacity="0.2"/>
+  <text x="52" y="638" fill="#D4A84B" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle">SP</text>
+
+  <text x="84" y="624" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">Suresh Patil</text>
+  <text x="84" y="644" fill="#5D4E37" font-family="Inter, sans-serif" font-size="11" fill-opacity="0.7">Farming since 2015 | 8 videos</text>
+
+  <!-- Verified badge -->
+  <rect x="290" y="620" width="68" height="24" rx="4" fill="#6B7B3C" fill-opacity="0.1"/>
+  <text x="324" y="637" fill="#6B7B3C" font-family="Inter, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Verified</text>
+
+  <!-- Related Product CTA -->
+  <rect x="16" y="676" width="358" height="80" rx="8" fill="#C45D3E" fill-opacity="0.06"/>
+  <rect x="16" y="676" width="358" height="80" rx="8" stroke="#C45D3E" stroke-width="1"/>
+
+  <!-- Seed packet mini -->
+  <rect x="32" y="692" width="48" height="48" rx="6" fill="#FFFFFF"/>
+  <rect x="40" y="700" width="32" height="32" rx="4" fill="#C45D3E" fill-opacity="0.1" stroke="#C45D3E" stroke-width="1"/>
+  <text x="56" y="720" fill="#C45D3E" font-family="Playfair Display, Georgia, serif" font-size="6" font-weight="600" text-anchor="middle">TOMATO</text>
+
+  <text x="96" y="708" fill="#5D4E37" font-family="Inter, sans-serif" font-size="12" font-weight="500">Seeds used in this video</text>
+  <text x="96" y="728" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">Tomato Hybrid 512</text>
+  <text x="96" y="746" fill="#5D4E37" font-family="JetBrains Mono, monospace" font-size="12">Rs 450 /10g pack</text>
+
+  <rect x="280" y="704" width="80" height="36" rx="6" fill="#C45D3E"/>
+  <text x="320" y="728" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Buy Now</text>
+
+  <!-- More Videos Section -->
+  <text x="20" y="792" fill="#5D4E37" font-family="Playfair Display, Georgia, serif" font-size="14" font-weight="600">More Videos Nearby</text>
+
+  <!-- Horizontal scroll thumbnails -->
+  <rect x="16" y="808" width="120" height="80" rx="6" fill="#5D4E37" fill-opacity="0.1"/>
+  <rect x="24" y="816" width="52" height="20" rx="4" fill="#D4A84B"/>
+  <text x="50" y="830" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">28 km</text>
+  <circle cx="76" cy="848" r="12" fill="#5D4E37" fill-opacity="0.6"/>
+  <polygon points="73,844 73,852 80,848" fill="#FFFFFF"/>
+
+  <rect x="144" y="808" width="120" height="80" rx="6" fill="#5D4E37" fill-opacity="0.1"/>
+  <rect x="152" y="816" width="52" height="20" rx="4" fill="#C45D3E"/>
+  <text x="178" y="830" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">65 km</text>
+  <circle cx="204" cy="848" r="12" fill="#5D4E37" fill-opacity="0.6"/>
+  <polygon points="201,844 201,852 208,848" fill="#FFFFFF"/>
+
+  <rect x="272" y="808" width="120" height="80" rx="6" fill="#5D4E37" fill-opacity="0.1"/>
+  <rect x="280" y="816" width="52" height="20" rx="4" fill="#5D4E37"/>
+  <text x="306" y="830" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">120 km</text>
+  <circle cx="332" cy="848" r="12" fill="#5D4E37" fill-opacity="0.6"/>
+  <polygon points="329,844 329,852 336,848" fill="#FFFFFF"/>
+
+</svg>

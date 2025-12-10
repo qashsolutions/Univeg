@@ -1,0 +1,96 @@
+{
+  "app": {
+    "name": "किसान मित्र",
+    "tagline": "आपका खेती साथी"
+  },
+  "nav": {
+    "home": "होम",
+    "shop": "दुकान",
+    "learn": "सीखें",
+    "calendar": "कैलेंडर",
+    "profile": "प्रोफाइल"
+  },
+  "home": {
+    "greeting": "सुप्रभात",
+    "weather": "आज का मौसम",
+    "humidity": "नमी",
+    "alerts": "सक्रिय अलर्ट",
+    "quickActions": "त्वरित कार्य",
+    "featuredSeeds": "विशेष बीज",
+    "viewAll": "सभी देखें"
+  },
+  "actions": {
+    "cropDoctor": "फसल डॉक्टर",
+    "cropDoctorDesc": "पौधों की बीमारी जानें",
+    "shopSeeds": "बीज खरीदें",
+    "shopSeedsDesc": "कैटलॉग देखें",
+    "myCalendar": "मेरा कैलेंडर",
+    "myCalendarDesc": "शेड्यूल देखें",
+    "voiceQuery": "आवाज से पूछें",
+    "voiceQueryDesc": "कुछ भी पूछें"
+  },
+  "alerts": {
+    "critical": "गंभीर",
+    "warning": "चेतावनी",
+    "info": "जानकारी"
+  },
+  "product": {
+    "addToCart": "कार्ट में डालें",
+    "buyNow": "अभी खरीदें",
+    "outOfStock": "स्टॉक में नहीं",
+    "inStock": "स्टॉक में उपलब्ध",
+    "pack": "पैक",
+    "reviews": "समीक्षाएं"
+  },
+  "checkout": {
+    "title": "चेकआउट",
+    "paymentMethod": "भुगतान विधि",
+    "upi": "UPI (Google Pay, Paytm)",
+    "cod": "कैश ऑन डिलीवरी",
+    "placeOrder": "ऑर्डर करें",
+    "orderConfirmed": "ऑर्डर कन्फर्म हुआ",
+    "trackOrder": "ऑर्डर ट्रैक करें",
+    "continueShopping": "खरीदारी जारी रखें"
+  },
+  "cropDoctor": {
+    "title": "फसल डॉक्टर",
+    "takePhoto": "फोटो लें",
+    "uploadPhoto": "फोटो अपलोड करें",
+    "analyzing": "जांच हो रही है...",
+    "healthy": "स्वस्थ",
+    "infected": "संक्रमण मिला",
+    "confidence": "विश्वास स्तर",
+    "treatment": "उपचार",
+    "prevention": "रोकथाम"
+  },
+  "calendar": {
+    "title": "खेती कैलेंडर",
+    "today": "आज",
+    "upcoming": "आगामी",
+    "completed": "पूर्ण",
+    "sowing": "बुवाई",
+    "irrigation": "सिंचाई",
+    "fertilizer": "खाद",
+    "pestControl": "कीट नियंत्रण",
+    "harvest": "कटाई"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "कुछ गलत हुआ",
+    "retry": "पुनः प्रयास करें",
+    "cancel": "रद्द करें",
+    "save": "सेव करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "back": "वापस",
+    "next": "आगे",
+    "done": "हो गया",
+    "search": "खोजें",
+    "filter": "फ़िल्टर",
+    "sort": "क्रमबद्ध करें"
+  },
+  "distance": {
+    "nearby": "पास में",
+    "kmAway": "{{km}} किमी दूर"
+  }
+}
