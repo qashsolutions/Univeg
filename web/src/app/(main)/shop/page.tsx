@@ -1,18 +1,30 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Header } from '@/components/layouts';
-import { Card, Input, Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui';
+import { Card, Input } from '@/components/ui';
 import { ProductCard } from '@/components/features/ProductCard';
 import { products, cropTypes } from '@/lib/data/products';
 import type { CropType } from '@/types';
 
 type SortOption = 'popular' | 'price-low' | 'price-high' | 'rating';
 
+const SEARCH_DEBOUNCE_MS = 300;
+
 export default function ShopPage() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchInput, setSearchInput] = useState('');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
   const [selectedCrop, setSelectedCrop] = useState<CropType | 'all'>('all');
   const [sortBy, setSortBy] = useState<SortOption>('popular');
+
+  // Debounce search input to avoid excessive filtering on every keystroke
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearch(searchInput);
+    }, SEARCH_DEBOUNCE_MS);
+
+    return () => clearTimeout(timer);
+  }, [searchInput]);
 
   const filteredProducts = useMemo(() => {
     let result = [...products];
@@ -22,13 +34,13 @@ export default function ShopPage() {
       result = result.filter((p) => p.cropType === selectedCrop);
     }
 
-    // Filter by search query
-    if (searchQuery.trim()) {
-      const query = searchQuery.toLowerCase();
+    // Filter by search query (using debounced value)
+    if (debouncedSearch.trim()) {
+      const query = debouncedSearch.toLowerCase();
       result = result.filter(
         (p) =>
           p.name.toLowerCase().includes(query) ||
-          p.nameHi?.includes(searchQuery) ||
+          p.nameHi?.includes(debouncedSearch) ||
           p.variety.toLowerCase().includes(query)
       );
     }
@@ -51,7 +63,7 @@ export default function ShopPage() {
     }
 
     return result;
-  }, [searchQuery, selectedCrop, sortBy]);
+  }, [debouncedSearch, selectedCrop, sortBy]);
 
   return (
     <main className="min-h-screen bg-cream">
@@ -61,8 +73,8 @@ export default function ShopPage() {
         {/* Search */}
         <Input
           placeholder="Search seeds..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
           className="bg-white"
         />
 

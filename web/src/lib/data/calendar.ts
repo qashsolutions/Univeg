@@ -134,13 +134,17 @@ export function getEventsByDate(date: string): CalendarEvent[] {
 }
 
 export function getUpcomingEvents(days: number = 7): CalendarEvent[] {
-  const endDate = new Date(today);
+  // Compute fresh date each time to avoid stale date issues
+  // (e.g., if app stays open past midnight)
+  const now = new Date();
+  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const endDate = new Date(todayStart);
   endDate.setDate(endDate.getDate() + days);
 
   return sampleEvents
     .filter((e) => {
       const eventDate = new Date(e.date);
-      return eventDate >= today && eventDate <= endDate && !e.completed;
+      return eventDate >= todayStart && eventDate <= endDate && !e.completed;
     })
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }

@@ -1,51 +1,98 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, memo, useEffect } from 'react';
 import Link from 'next/link';
 import { Header } from '@/components/layouts';
-import { Card, Badge, Input, Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui';
-import { diseases, getDiseasesByCrop, searchDiseases } from '@/lib/data/diseases';
+import { Card, Badge, Input } from '@/components/ui';
+import { diseases } from '@/lib/data/diseases';
 import { cropTypes } from '@/lib/data/products';
 import { cn } from '@/lib/utils';
+import { CROP_EMOJI, SEVERITY_CONFIG } from '@/lib/constants';
 import type { CropType, Disease } from '@/types';
 
+const SEARCH_DEBOUNCE_MS = 300;
+
+/**
+ * Memoized disease card component to prevent unnecessary re-renders
+ */
+const DiseaseCard = memo(function DiseaseCard({ disease }: { disease: Disease }) {
+  return (
+    <Link href={`/learn/${disease.id}`}>
+      <Card className="hover:border-earth-brown/30 transition-colors">
+        <div className="flex items-start gap-3">
+          <div className="w-12 h-12 rounded-lg bg-parchment flex items-center justify-center text-2xl flex-shrink-0">
+            {CROP_EMOJI[disease.crop]}
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-start justify-between gap-2 mb-1">
+              <h3 className="font-heading font-semibold text-sm text-earth-brown leading-tight">
+                {disease.name}
+              </h3>
+              <Badge color={SEVERITY_CONFIG[disease.severity].color}>
+                {SEVERITY_CONFIG[disease.severity].label}
+              </Badge>
+            </div>
+            {disease.nameHi && (
+              <p className="text-xs text-charcoal/60 mb-2">{disease.nameHi}</p>
+            )}
+            <p className="text-xs text-charcoal/70 line-clamp-2">
+              {disease.symptoms.slice(0, 2).join('. ')}
+            </p>
+            <div className="flex flex-wrap gap-1 mt-2">
+              {disease.affectedStages.slice(0, 3).map((stage) => (
+                <span
+                  key={stage}
+                  className="text-[9px] px-2 py-0.5 bg-parchment rounded-full text-earth-brown/70 capitalize"
+                >
+                  {stage}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Card>
+    </Link>
+  );
+});
+
 export default function LearnPage() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchInput, setSearchInput] = useState('');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
   const [selectedCrop, setSelectedCrop] = useState<CropType | 'all'>('all');
 
+  // Debounce search input to avoid excessive filtering on every keystroke
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearch(searchInput);
+    }, SEARCH_DEBOUNCE_MS);
+
+    return () => clearTimeout(timer);
+  }, [searchInput]);
+
+  // Combined filtering in a single pass (fixes redundant filter operations)
   const filteredDiseases = useMemo(() => {
-    let result = [...diseases];
+    return diseases.filter((disease) => {
+      // Filter by crop type
+      if (selectedCrop !== 'all' && disease.crop !== selectedCrop) {
+        return false;
+      }
 
-    if (selectedCrop !== 'all') {
-      result = getDiseasesByCrop(selectedCrop);
-    }
+      // Filter by search query (using debounced value)
+      if (debouncedSearch.trim()) {
+        const query = debouncedSearch.toLowerCase();
+        const matchesName = disease.name.toLowerCase().includes(query);
+        const matchesNameHi = disease.nameHi?.includes(debouncedSearch);
+        const matchesSymptoms = disease.symptoms.some((s) =>
+          s.toLowerCase().includes(query)
+        );
+        if (!matchesName && !matchesNameHi && !matchesSymptoms) {
+          return false;
+        }
+      }
 
-    if (searchQuery.trim()) {
-      result = searchDiseases(searchQuery).filter(
-        (d) => selectedCrop === 'all' || d.crop === selectedCrop
-      );
-    }
-
-    return result;
-  }, [searchQuery, selectedCrop]);
-
-  const cropEmoji: Record<string, string> = {
-    tomato: '🍅',
-    chilli: '🌶️',
-    okra: '🥒',
-    brinjal: '🍆',
-    cucumber: '🥒',
-    'bottle-gourd': '🫛',
-    cotton: '☁️',
-    maize: '🌽',
-  };
-
-  const severityConfig: Record<string, { color: 'primary' | 'secondary' | 'success' | 'muted'; label: string }> = {
-    critical: { color: 'primary', label: 'Critical' },
-    high: { color: 'primary', label: 'High' },
-    medium: { color: 'secondary', label: 'Medium' },
-    low: { color: 'success', label: 'Low' },
-  };
+      return true;
+    });
+  }, [debouncedSearch, selectedCrop]);
 
   return (
     <main className="min-h-screen bg-cream pb-20">
@@ -55,8 +102,8 @@ export default function LearnPage() {
         {/* Search */}
         <Input
           placeholder="Search diseases, symptoms..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
           className="bg-white"
         />
 
@@ -84,7 +131,7 @@ export default function LearnPage() {
                   : 'bg-white border border-parchment text-earth-brown hover:border-earth-brown/30'
               )}
             >
-              <span>{cropEmoji[crop.type]}</span>
+              <span>{CROP_EMOJI[crop.type]}</span>
               {crop.name}
             </button>
           ))}
@@ -111,63 +158,5 @@ export default function LearnPage() {
         </div>
       </div>
     </main>
-  );
-}
-
-function DiseaseCard({ disease }: { disease: Disease }) {
-  const cropEmoji: Record<string, string> = {
-    tomato: '🍅',
-    chilli: '🌶️',
-    okra: '🥒',
-    brinjal: '🍆',
-    cucumber: '🥒',
-    'bottle-gourd': '🫛',
-    cotton: '☁️',
-    maize: '🌽',
-  };
-
-  const severityConfig: Record<string, { color: 'primary' | 'secondary' | 'success' | 'muted'; label: string }> = {
-    critical: { color: 'primary', label: 'Critical' },
-    high: { color: 'primary', label: 'High' },
-    medium: { color: 'secondary', label: 'Medium' },
-    low: { color: 'success', label: 'Low' },
-  };
-
-  return (
-    <Link href={`/learn/${disease.id}`}>
-      <Card className="hover:border-earth-brown/30 transition-colors">
-        <div className="flex items-start gap-3">
-          <div className="w-12 h-12 rounded-lg bg-parchment flex items-center justify-center text-2xl flex-shrink-0">
-            {cropEmoji[disease.crop]}
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="flex items-start justify-between gap-2 mb-1">
-              <h3 className="font-heading font-semibold text-sm text-earth-brown leading-tight">
-                {disease.name}
-              </h3>
-              <Badge color={severityConfig[disease.severity].color}>
-                {severityConfig[disease.severity].label}
-              </Badge>
-            </div>
-            {disease.nameHi && (
-              <p className="text-xs text-charcoal/60 mb-2">{disease.nameHi}</p>
-            )}
-            <p className="text-xs text-charcoal/70 line-clamp-2">
-              {disease.symptoms.slice(0, 2).join('. ')}
-            </p>
-            <div className="flex flex-wrap gap-1 mt-2">
-              {disease.affectedStages.slice(0, 3).map((stage) => (
-                <span
-                  key={stage}
-                  className="text-[9px] px-2 py-0.5 bg-parchment rounded-full text-earth-brown/70 capitalize"
-                >
-                  {stage}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </Card>
-    </Link>
   );
 }

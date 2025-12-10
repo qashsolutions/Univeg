@@ -1,31 +1,26 @@
 'use client';
 
+import { memo } from 'react';
 import Link from 'next/link';
 import type { Product } from '@/types';
 import { Card } from '@/components/ui';
 import { formatCurrency } from '@/lib/utils';
+import { CROP_EMOJI } from '@/lib/constants';
 
 interface ProductCardProps {
   product: Product;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
-  const cropEmoji: Record<string, string> = {
-    tomato: '🍅',
-    chilli: '🌶️',
-    okra: '🥒',
-    brinjal: '🍆',
-    cucumber: '🥒',
-    'bottle-gourd': '🫛',
-    cotton: '☁️',
-    maize: '🌽',
-  };
-
+/**
+ * Memoized product card component to prevent unnecessary re-renders
+ * when parent component (shop page) re-renders due to filter/sort changes
+ */
+export const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={`/shop/${product.id}`}>
       <Card padding="none" className="overflow-hidden hover:border-earth-brown/30 transition-colors h-full">
         <div className="aspect-[4/3] bg-parchment flex items-center justify-center">
-          <span className="text-5xl">{cropEmoji[product.cropType] || '🌱'}</span>
+          <span className="text-5xl">{CROP_EMOJI[product.cropType] || '🌱'}</span>
         </div>
         <div className="p-3">
           <h3 className="font-heading font-semibold text-sm text-earth-brown leading-tight mb-0.5">
@@ -57,4 +52,4 @@ export function ProductCard({ product }: ProductCardProps) {
       </Card>
     </Link>
   );
-}
+});
