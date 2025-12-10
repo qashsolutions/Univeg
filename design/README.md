@@ -92,6 +92,9 @@ font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', etc.;
 | `ARCHITECTURE.md` | Complete platform architecture and system design |
 | `AGENTIC_ARCHITECTURE.md` | Detailed AI agent specifications and data flows |
 | `GEO_VIDEO_ARCHITECTURE.md` | Location-based video matching system and geocoding |
+| `HIERARCHY.md` | Information hierarchy, content depth levels, tabbed panels |
+| `DESIGN_PRINCIPLES.md` | Premium aesthetics, typography, sound design, interactions |
+| `AGRONOMIC_REFERENCE.md` | Educational crop profiles, disease guides, fertilizer schedules |
 
 ---
 
