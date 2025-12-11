@@ -5,8 +5,9 @@ import { notFound } from 'next/navigation';
 import { Header } from '@/components/layouts';
 import { Button, Card, Badge, Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui';
 import { getProductById, products } from '@/lib/data/products';
-import { formatCurrency, cn } from '@/lib/utils';
+import { formatCurrency } from '@/lib/utils';
 import { useStore } from '@/lib/stores/useStore';
+import { CROP_EMOJI } from '@/lib/constants';
 
 interface ProductPageProps {
   params: Promise<{ id: string }>;
@@ -21,17 +22,6 @@ export default function ProductPage({ params }: ProductPageProps) {
     notFound();
   }
 
-  const cropEmoji: Record<string, string> = {
-    tomato: '🍅',
-    chilli: '🌶️',
-    okra: '🥒',
-    brinjal: '🍆',
-    cucumber: '🥒',
-    'bottle-gourd': '🫛',
-    cotton: '☁️',
-    maize: '🌽',
-  };
-
   const relatedProducts = products
     .filter((p) => p.cropType === product.cropType && p.id !== product.id)
     .slice(0, 4);
@@ -42,7 +32,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 
       {/* Product Image */}
       <div className="aspect-square bg-parchment flex items-center justify-center">
-        <span className="text-8xl">{cropEmoji[product.cropType] || '🌱'}</span>
+        <span className="text-8xl">{CROP_EMOJI[product.cropType] || '🌱'}</span>
       </div>
 
       <div className="px-4 py-4 max-w-lg mx-auto space-y-4">
@@ -157,7 +147,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 >
                   <Card padding="sm">
                     <div className="aspect-square bg-parchment rounded-md mb-2 flex items-center justify-center">
-                      <span className="text-2xl">{cropEmoji[related.cropType]}</span>
+                      <span className="text-2xl">{CROP_EMOJI[related.cropType]}</span>
                     </div>
                     <h3 className="font-medium text-xs text-earth-brown truncate">
                       {related.name}
